@@ -89,7 +89,28 @@ article h1,
 }
 
 /*Two column layout*/
-@media (max-width: 500px) or (orientation: portrait) {
+@media (max-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+      "header       header"
+      "skills       skills"
+      "experience   experience"
+      "footer       footer";
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .resume-skills {
+        padding: 0;
+    }
+    .resume-experience {
+        padding: 0;
+    }
+
+}
+@media (orientation: portrait) {
     .wrapper {
         grid-template-columns: 1fr 3fr;
         grid-template-areas:
