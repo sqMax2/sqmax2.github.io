@@ -44,15 +44,20 @@ body {
 }
 .plane {
     width: 100%;
-    margin-left: -50px;
+    margin-left: -70px;
     background-color: dimgray;
-    padding: 20px 20px 20px 80px;
+    padding: 20px 20px 20px 100px;
     border: 10px;
-}
-.main-head h1 {
-    font-size: 2em;
+    display: inline-block;
 
-    line-height: 0.05em;
+}
+.plane h1 {
+    font-size: 3em;
+    word-wrap: anywhere;
+    flex-wrap: wrap;
+    max-lines: 2;
+
+    line-height: 0.8em;
 }
 .icon {
     max-width: 1em;
@@ -84,7 +89,7 @@ article h1,
 }
 
 /*Two column layout*/
-@media (max-width: 500px) {
+@media (max-width: 500px) or (orientation: portrait) {
     .wrapper {
         grid-template-columns: 1fr 3fr;
         grid-template-areas:
