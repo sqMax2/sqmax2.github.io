@@ -10,7 +10,7 @@ body {
     "skills"
     "experience"
     "footer";
-
+    scale: none;
 }
 .main-head {
     grid-area: header;
@@ -25,22 +25,23 @@ body {
 }
 .resume-skills {
     grid-area: skills;
-
 }
 .main-footer {
     grid-area: footer;
+    align-self: center;
+    justify-self: center;
+
 }
 .photo {
-
     max-width: 200px;
+    min-width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding: 5px;
     margin-right: 10px;
     background-color: lightgray;
     border: white solid 2px;
     z-index: 1;
-    /*border-color: black;*/
-    /*border-width: 5px;*/
 }
 .plane {
     width: 100%;
@@ -49,14 +50,12 @@ body {
     padding: 20px 20px 20px 100px;
     border: 10px;
     display: inline-block;
-
 }
 .plane h1 {
     font-size: 3em;
     word-wrap: anywhere;
     flex-wrap: wrap;
     max-lines: 2;
-
     line-height: 0.8em;
 }
 .icon {
@@ -86,7 +85,64 @@ article h1,
 .resume-skills h1 {
     color: firebrick;
     font-size: 2em;
+    margin-bottom: 0.1em;
 }
+.resume-skills h2 {
+    margin-top: 0.1em;
+}
+.skill-display {
+    display: flex;
+    justify-content: start;
+}
+.skill-name {
+    font-size: 1.5em;
+    max-width: 50%;
+    min-width: 5em;
+    padding-right: 2em;
+    margin: 0;
+}
+.skill-container {
+    width: 100%;
+    background-color: dimgray;
+    height: 1.5em;
+}
+.skills {
+    text-align: right;
+    font-size: 1em;
+    height: 1.5em;
+    /*padding-top: 0.25em;*/
+    /*padding-bottom: 0.25em;*/
+    padding-right: 5px;
+    color: white;
+}
+.skill-python {
+    width: 50%; background-color: firebrick;
+}
+.skill-html {
+    width: 60%; background-color: firebrick;
+}
+.skill-css {
+    width: 30%; background-color: firebrick;
+}
+.skill-js {
+    width: 50%; background-color: firebrick;
+}
+.skill-cpp {
+    width: 30%; background-color: firebrick;
+}
+.skill-teamwork {
+    width: 80%; background-color: firebrick;
+}
+.skill-creativity {
+    width: 70%; background-color: firebrick;
+}
+.skill-management {
+    width: 50%; background-color: firebrick;
+}
+.skill-leadership {
+    width: 60%; background-color: firebrick;
+}
+
 
 /*Two column layout*/
 @media (max-width: 500px) {
@@ -108,7 +164,6 @@ article h1,
     .resume-experience {
         padding: 0;
     }
-
 }
 @media (orientation: portrait) {
     .wrapper {
@@ -129,8 +184,6 @@ article h1,
     .resume-experience {
         padding: 0;
     }
-
-
 }
 
 /*Three column layout*/
@@ -167,6 +220,5 @@ article h1,
         justify-content: flex-start;
         align-items: baseline;
         flex-wrap: nowrap;
-
     }
 }
