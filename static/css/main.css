@@ -199,7 +199,7 @@ article h1,
         flex-wrap: nowrap;
     }
 }
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) and (max-device-width: 700px)  {
     .wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -207,6 +207,7 @@ article h1,
         "skills"
         "experience"
         "footer";
+        padding: 5px 10px 5px 10px;
     }
     nav ul {
         display: flex;
