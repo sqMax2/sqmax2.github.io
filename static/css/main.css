@@ -19,6 +19,7 @@ body {
     justify-content: left;
     align-items: center;
     overflow: hidden;
+    font-size: 12pt;
 }
 .resume-experience {
     grid-area: experience;
@@ -91,9 +92,10 @@ article h1,
 .skill-display {
     display: flex;
     justify-content: start;
+    font-size: 14pt;
 }
 .skill-name {
-    font-size: 1.5em;
+    font-size: 20pt;
     max-width: 50%;
     min-width: 5em;
     padding-right: 2em;
