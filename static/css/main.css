@@ -44,9 +44,9 @@ body {
 }
 .plane {
     width: 100%;
-    margin-left: -70px;
+    margin-left: -100px;
     background-color: dimgray;
-    padding: 20px 20px 20px 100px;
+    padding: 10px 20px 10px 110px;
     border: 10px;
     display: inline-block;
 }
@@ -142,56 +142,36 @@ article h1,
 }
 
 /*Two column layout*/
-@media screen and (min-width: 500px) {
-    .wrapper {
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-      "header       header"
-      "skills       skills"
-      "experience   experience"
-      "footer       footer";
-    }
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    .resume-skills {
-        padding: 0;
-    }
-    .resume-experience {
-        padding: 0;
-    }
-}
-@media screen and (orientation: portrait) {
-    .wrapper {
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-      "header       header"
-      "skills       skills"
-      "experience   experience"
-      "footer       footer";
-    }
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    .resume-skills {
-        padding: 0;
-    }
-    .resume-experience {
-        padding: 0;
-    }
-}
+/*@media screen and (min-width: 800px) {*/
+/*    .wrapper {*/
+/*        grid-template-columns: 1fr 3fr;*/
+/*        grid-template-areas:*/
+/*      "header       header"*/
+/*      "skills       skills"*/
+/*      "experience   experience"*/
+/*      "footer       footer";*/
+/*    }*/
+/*    nav ul {*/
+/*        display: flex;*/
+/*        justify-content: space-between;*/
+/*    }*/
+/*    .resume-skills {*/
+/*        padding: 0;*/
+/*    }*/
+/*    .resume-experience {*/
+/*        padding: 0;*/
+/*    }*/
+/*}*/
 
 /*Three column layout*/
-@media (min-width: 750px) {
+@media screen and (min-width: 750px) {
     .wrapper {
-        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 3fr;
         grid-template-areas:
-      "header   header      header"
-      "skills   experience  experience"
-      "skills   experience  experience"
-      "footer   footer      footer";
+      "header   header"
+      "skills   experience"
+      "skills   experience"
+      "footer   footer";
     }
     nav ul {
         flex-direction: column;
@@ -217,5 +197,25 @@ article h1,
         justify-content: flex-start;
         align-items: baseline;
         flex-wrap: nowrap;
+    }
+}
+@media screen and (orientation: portrait) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "skills"
+        "experience"
+        "footer";
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .resume-skills {
+        padding: 0;
+    }
+    .resume-experience {
+        padding: 0;
     }
 }
