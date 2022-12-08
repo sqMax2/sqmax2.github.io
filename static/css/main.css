@@ -211,6 +211,7 @@ article h1,
         "experience"
         "footer";
         padding: 5px 10px 5px 10px;
+        font-size: 12pt;
     }
     nav ul {
         display: flex;
@@ -222,4 +223,31 @@ article h1,
     .resume-experience {
         padding: 0;
     }
+    .main-head h1 {
+        font-size: 6vw;
+    }
+    .contacts {
+        font-size: 1.5vw;
+    }
+    .skill-name {
+        font-size: 5vw;
+    }
+    .skill-container {
+        font-size: 3vw;
+    }
+    /*.main-head {*/
+    /*    transform: scale(2);*/
+    /*}*/
+    /*.plane {*/
+    /*    transform: scale(2);*/
+    /*}*/
+    /*.photo {*/
+    /*    transform: scale(2);*/
+    /*}*/
+    /*.photo {*/
+    /*    min-width: calc(400px - 10vw);*/
+    /*    min-height: calc(400px - 10vw);*/
+    /*}*/
+
+
 }
